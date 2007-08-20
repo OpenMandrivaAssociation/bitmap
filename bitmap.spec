@@ -60,8 +60,8 @@ fi
 %{_includedir}/X11/bitmaps/RotateRight
 %{_includedir}/X11/bitmaps/FlipVert
 %{_includedir}/X11/bitmaps/Stipple
-%{_mandir}/man1/bitmap.1*.bz2
-%{_mandir}/man1/bmtoa.1*.bz2
-%{_mandir}/man1/atobm.1*.bz2
+%{_mandir}/man1/bitmap.1*
+%{_mandir}/man1/bmtoa.1*
+%{_mandir}/man1/atobm.1*
 
 

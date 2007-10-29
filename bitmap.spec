@@ -1,6 +1,6 @@
 Name:		bitmap
 Version:	1.0.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Bitmap editor and converter utilities for the X Window System
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -22,6 +22,7 @@ Window System.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -ifs
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 

@@ -23,10 +23,7 @@ Window System.
 %patch0 -p0
 
 %build
-autoreconf -ifs
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
-
+%configure2_5x --disable-dependency-tracking
 %make
 
 %install

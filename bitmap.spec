@@ -1,10 +1,10 @@
 Name:		bitmap
 Version:	1.0.4
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Bitmap editor and converter utilities for the X Window System
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-Patch0:		bitmap-1.0.3-format_not_a_string_literal_and_no_format_arguments.diff
+Patch0:		bitmap-1.0.4-format_not_a_string_literal_and_no_format_arguments.diff
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	libx11-devel >= 1.0.0

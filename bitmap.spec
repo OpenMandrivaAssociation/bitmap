@@ -1,13 +1,12 @@
 Name:		bitmap
-Version:	1.0.5
-Release:	%mkrel 2
+Version:	1.0.6
+Release:	1
 Summary:	Bitmap editor and converter utilities for the X Window System
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 URL:		http://xorg.freedesktop.org/archive/X11R6.8.0/doc/bitmap.1.html
 Patch0:		bitmap-1.0.4-format_not_a_string_literal_and_no_format_arguments.diff
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	libx11-devel >= 1.0.0
 BuildRequires:	libxmu-devel >= 1.0.0
 BuildRequires:	libxt-devel >= 1.0.0
@@ -28,19 +27,14 @@ Window System.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
-%pre 
+%pre
 if [ -h %{_includedir}/X11 ]; then
 	rm -f %{_includedir}/X11
 fi
 
 %files
-%defattr(-,root,root)
 %{_bindir}/atobm
 %{_bindir}/bmtoa
 %{_bindir}/bitmap
@@ -63,4 +57,3 @@ fi
 %{_mandir}/man1/bitmap.1*
 %{_mandir}/man1/bmtoa.1*
 %{_mandir}/man1/atobm.1*
-

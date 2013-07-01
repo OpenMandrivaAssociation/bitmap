@@ -1,4 +1,4 @@
-Summary:	Bitmap editor and converter utilities for the X Window System
+Summary:	Editor and converter utilities for the X Window System
 Name:		bitmap
 Version:	1.0.7
 Release:	1

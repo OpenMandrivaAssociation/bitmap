@@ -1,7 +1,7 @@
 Summary:	Editor and converter utilities for the X Window System
 Name:		bitmap
 Version:	1.0.7
-Release:	3
+Release:	4
 Group:		Development/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org/archive/X11R6.8.0/doc/bitmap.1.html

@@ -1,6 +1,6 @@
 Summary:	Editor and converter utilities for the X Window System
 Name:		bitmap
-Version:	1.0.9
+Version:	1.1.0
 Release:	1
 Group:		Development/X11
 License:	MIT
@@ -19,15 +19,16 @@ Bitmap provides is a bitmap editor and misc converter utilities for the X
 Window System.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure \
 	--disable-dependency-tracking
-%make
+
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/atobm
@@ -49,7 +50,7 @@ Window System.
 %{_includedir}/X11/bitmaps/RotateRight
 %{_includedir}/X11/bitmaps/FlipVert
 %{_includedir}/X11/bitmaps/Stipple
-%{_mandir}/man1/bitmap.1*
-%{_mandir}/man1/bmtoa.1*
-%{_mandir}/man1/atobm.1*
+%doc %{_mandir}/man1/bitmap.1*
+%doc %{_mandir}/man1/bmtoa.1*
+%doc %{_mandir}/man1/atobm.1*
 

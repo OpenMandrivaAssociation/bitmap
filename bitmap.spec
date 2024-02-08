@@ -1,11 +1,11 @@
 Summary:	Editor and converter utilities for the X Window System
 Name:		bitmap
-Version:	1.1.0
-Release:	2
+Version:	1.1.1
+Release:	1
 Group:		Development/X11
 License:	MIT
-Url:		http://xorg.freedesktop.org/archive/X11R6.8.0/doc/bitmap.1.html
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Url:		https://xorg.freedesktop.org/archive/X11R6.8.0/doc/bitmap.1.html
+Source0:	https://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xaw7)

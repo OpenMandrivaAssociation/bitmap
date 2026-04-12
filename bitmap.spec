@@ -1,6 +1,6 @@
 Summary:	Editor and converter utilities for the X Window System
 Name:		bitmap
-Version:	1.1.1
+Version:	1.1.2
 Release:	1
 Group:		Development/X11
 License:	MIT
